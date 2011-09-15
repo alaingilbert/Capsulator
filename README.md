@@ -1,3 +1,5 @@
+#Capsulator !
+
 Voilà, j'ai reproduit exactement ce que fait : `http://pilule.ca/` dans un script `python` d'environ 50 lignes.
 (LOL)
 
@@ -5,4 +7,4 @@ Voilà, j'ai reproduit exactement ce que fait : `http://pilule.ca/` dans un scri
 Étape 2: Modifier Settings.py
 Étape 3: `python main.py`
 
-# Je suis également prêt à collaborer avec l'université Laval !
+#Je suis également prêt à collaborer avec l'Université Laval !
