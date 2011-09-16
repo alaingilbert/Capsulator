@@ -3,6 +3,8 @@
 
 {% block content %}
 
+{% if err %}{{err}}{% endif %}
+
 <form method="post" action="">
    <label>IDUL:</label><input type="text" name="idul"><br />
    <label>Password:</label><input type="password" name="pasw"><br />

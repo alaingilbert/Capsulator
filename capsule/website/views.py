@@ -25,34 +25,37 @@ def loginfun(req):
             login(req, user)
             return HttpResponseRedirect('/home/')
          else:
-            user = User.objects.create_user(idul, '', pasw+idul)
-            user.is_active = False
-            user.save()
-            profile = user.get_profile()
-
             http = Http()
             http.get('https://capsuleweb.ulaval.ca/pls/etprod7/twbkwbis.P_WWWLogin')
-            http.post('https://capsuleweb.ulaval.ca/pls/etprod7/twbkwbis.P_ValLogin', { 'sid': idul, 'PIN': pasw })
+            res = http.post('https://capsuleweb.ulaval.ca/pls/etprod7/twbkwbis.P_ValLogin', { 'sid': idul, 'PIN': pasw })
+            c = re.compile('invalides', re.S)
+            if not c.search(res):
+               user = User.objects.create_user(idul, '', pasw+idul)
+               user.is_active = False
+               user.save()
+               profile = user.get_profile()
 
-            res = http.get('https://capsuleweb.ulaval.ca/pls/etprod7/bwskfshd.P_CrseSchd').decode('cp1252').encode('utf-8')
-            c = re.compile('(<TABLE\s\sCLASS="datadisplaytable"(.*?)">.+?)<!--\s\s\*\* START', re.S)
-            t = c.search(res).group(1)
-            profile.horaire = t
+               res = http.get('https://capsuleweb.ulaval.ca/pls/etprod7/bwskfshd.P_CrseSchd').decode('cp1252').encode('utf-8')
+               c = re.compile('(<TABLE\s\sCLASS="datadisplaytable"(.*?)">.+?)<!--\s\s\*\* START', re.S)
+               t = c.search(res).group(1)
+               profile.horaire = t
 
-            res = http.get('https://capsuleweb.ulaval.ca/pls/etprod7/bwskoacc.P_ViewAcctTotal').decode('cp1252').encode('utf-8')
-            c = re.compile('<TABLE  CLASS="datadisplaytable"(.*?)">(.+?)<!--\s\s\*\* START', re.S)
-            t = c.search(res).group(2)
-            profile.compte = t
+               res = http.get('https://capsuleweb.ulaval.ca/pls/etprod7/bwskoacc.P_ViewAcctTotal').decode('cp1252').encode('utf-8')
+               c = re.compile('<TABLE  CLASS="datadisplaytable"(.*?)">(.+?)<!--\s\s\*\* START', re.S)
+               t = c.search(res).group(2)
+               profile.compte = t
 
-            res = http.post('https://capsuleweb.ulaval.ca/pls/etprod7/bwskgstu.P_StuInfo', { 'term_in': '201109' }).decode('cp1252').encode('utf-8')
-            c = re.compile('<DIV class="pagetitlediv">(.+?)<!--\s\s\*\* START', re.S)
-            t = c.search(res).group(1)
-            profile.dossier = t
+               res = http.post('https://capsuleweb.ulaval.ca/pls/etprod7/bwskgstu.P_StuInfo', { 'term_in': '201109' }).decode('cp1252').encode('utf-8')
+               c = re.compile('<DIV class="pagetitlediv">(.+?)<!--\s\s\*\* START', re.S)
+               t = c.search(res).group(1)
+               profile.dossier = t
 
-            profile.save()
-            theuser = authenticate(username=idul, password=pasw+idul)
-            login(req, theuser)
-            return HttpResponseRedirect('/home/')
+               profile.save()
+               theuser = authenticate(username=idul, password=pasw+idul)
+               login(req, theuser)
+               return HttpResponseRedirect('/home/')
+            else:
+               return render_to_response('login.html', {'err':'Bad username/password'})
       else:
          return render_to_response('login.html', {'err':'Bad username/password'})
 
