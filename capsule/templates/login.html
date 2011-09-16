@@ -1,14 +1,30 @@
 {% extends "base.html" %}
 
 
+{% block extrahead %}
+<script type="text/javascript">
+var submitted = false;
+function onSubmit() {
+   if (!submitted) {
+      console.log('CALISS');
+      submitted = true;
+      var btnSubmit = document.getElementById('btnSubmit').disabled = 'disabled';
+   } else {
+      return false;
+   }
+}
+</script>
+{% endblock %}
+
+
 {% block content %}
 
 {% if err %}{{err}}{% endif %}
 
-<form method="post" action="">
+<form method="post" action="" onsubmit="return onSubmit();">
    <label>IDUL:</label><input type="text" name="idul"><br />
    <label>Password:</label><input type="password" name="pasw"><br />
-   <input type="submit" value="Submit" />
+   <input id="btnSubmit" type="submit" value="Submit" />
 </form>
 
 {% endblock %}
