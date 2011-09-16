@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+
+<h2>Frais de scolarité</h2>
+{{user.get_profile.compte|safe}}
+
+{% endblock %}

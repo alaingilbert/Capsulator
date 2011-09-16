@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta http-equiv="cache-control" content="no-cache, must-revalidate">
+   <meta http-equiv="Expires" content="Tue, 01 Jan 2000 12:12:12 GMT">
+   <meta http-equiv="Pragma" content="no-cache">
+   <link rel="stylesheet" media="screen" type="text/css" href="/css/style.css" />
+</head>
+<body>
+
+<div id="copyright">Copyright <a href="http://agilbert.name/">Alain Gilbert</a> (<a href="http://twitter.com/#!/alain_gilbert">@alain_gilbert</a>)</div>
+
+{% if user %}
+<ul>
+   <li><a href="/horaire/">Horaire</a></li>
+   <li><a href="/compte/">Frais de scolarite</a></li>
+   <li><a href="/dossier/">Dossier scolaire</a></li>
+   <li><a href="/logout/">Logout</a></li>
+</ul>
+{% endif %}
+
+{% block content %}{% endblock %}
+
+
+</body>
+</html>

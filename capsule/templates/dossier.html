@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+
+<h2>Dossier</h2>
+{{user.get_profile.dossier|safe}}
+
+{% endblock %}

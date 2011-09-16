@@ -1,0 +1,1651 @@
+html, body {
+   margin: 0;
+   padding: 0;
+}
+
+#copyright {
+   margin-top: 15px;
+   height: 30px;
+   border-bottom: 1px solid gray;
+   margin-bottom: 30px;
+}
+label {
+   width: 100px;
+   float: left;
+}
+
+.centeraligntext {
+text-align: center;
+}
+
+.leftaligntext {
+text-align: left;
+}
+
+.rightaligntext {
+text-align: right;
+}
+
+.menulisttext {
+list-style: none;
+}
+
+.captiontext {
+color: black;
+font-family: Verdana, Arial Narrow, helvetica, sans-serif;
+font-weight: bold;
+font-size: 90%;
+font-style: italic;
+text-align: left;
+margin-top: 1em;
+}
+
+.skiplinks {
+display: none;
+}
+
+.pageheaderlinks {
+color: #000000; /* Valeur initiale : #FFFFFF; Modifié par DOHAR33 le 2008-08-08 */
+font-family: Verdana, Arial Narrow, helvetica, sans-serif;
+font-weight: normal;
+font-size: 90%;
+font-style: normal;
+text-align: center;
+word-spacing: 16px; /* Ajouté par DOHAR33 le 2008-08-08 */
+}
+
+.requirementnotmet {
+color: black;
+} 
+
+/* Class for Sub-menu Items */
+/* ======================================================== */
+.pageheaderlinks2 {
+color: #CED5EA;
+font-family: Verdana, Arial Narrow, helvetica, sans-serif;
+font-size: 90%;
+text-align: justify;
+}
+
+.pagebodylinks {
+color: black;
+font-family: Verdana, Arial Narrow, helvetica, sans-serif;
+font-weight: normal;
+font-size: 90%;
+font-style: normal;
+text-align: center;
+}
+
+.gotoanchorlinks {
+color: black;
+font-family: Verdana, Arial Narrow, helvetica, sans-serif;
+font-weight: normal;
+font-size: 90%;
+font-style: normal;
+text-align: left;
+}
+
+.pagefooterlinks {
+color: black;
+font-family: Verdana, Arial Narrow, helvetica, sans-serif;
+font-weight: normal;
+font-size: 90%;
+font-style: normal;
+text-align: center;
+/* BROWSER CONSIDERATION - To make Netscape and IE compatible for PageFooter Division. */
+/* Margin-left style specified for Netscape within parent SPAN tag, */
+/* while IE uses the padding-left style within parent DIV tag. */
+margin-left: 3px; 
+}
+
+.backlinktext {
+color: black;
+font-family: Verdana, Arial Narrow, helvetica, sans-serif;
+font-weight: normal;
+font-size: 90%;
+font-style: normal;
+text-align: right;
+margin-bottom: 5px;
+}
+
+.menuheadertext {
+color: black;
+font-family: Verdana, Arial Narrow, helvetica, sans-serif;
+font-weight: normal;
+font-size: 100%;
+font-style: normal;
+text-align: left;
+}
+
+.menulinktext {
+color: #0F2167;
+font-family: Verdana, Arial Narrow, helvetica, sans-serif;
+font-weight: bold;
+font-style: normal;
+}
+
+.menulinkdesctext {
+color: black;
+font-family: Verdana, Arial Narrow, helvetica, sans-serif;
+font-weight: normal;
+font-size: 90%;
+font-style: normal;
+text-align: left;
+}
+
+.normaltext {
+color: black;
+font-family: Verdana, Arial Narrow, helvetica, sans-serif;
+font-weight: normal;
+font-size: 90%;
+font-style: normal;
+text-align: left;
+}
+
+.infotext {
+color: black;
+font-family: Verdana, Arial Narrow, helvetica, sans-serif;
+font-weight: normal;
+font-size: 90%;
+font-style: normal;
+text-align: left;
+}
+
+.errortext {
+color: black;
+font-family: Verdana, Arial Narrow, helvetica, sans-serif;
+font-weight: bold;
+font-size: 90%;
+font-style: normal;
+text-align: left;
+}
+
+.warningtext {
+color: black;
+font-family: Verdana, Arial Narrow, helvetica, sans-serif;
+font-weight: bold;
+font-size: 90%;
+font-style: normal;
+text-align: left;
+}
+
+.multipagemsgtext {
+color: black;
+font-family: Verdana, Arial Narrow, helvetica, sans-serif;
+font-weight: normal;
+font-size: 90%;
+font-style: normal;
+text-align: left;
+}
+
+.releasetext {
+color: #b4ac98; /* Valeur initiale : black; Modifié par DOHAR33 le 2008-08-08 */
+font-family: Tahoma, Verdana, Arial Narrow, helvetica, sans-serif; /* Valeur initiale : Verdana, Arial Narrow, helvetica, sans-serif; Modifié par DOHAR33 le 2008-08-08 */
+font-weight: normal; /* Valeur initiale : bold; Modifié par DOHAR33 le 2008-08-08 */
+font-size: 8pt; /* Valeur initiale : 90%; Modifié par DOHAR33 le 2008-08-08 */
+font-style: normal;
+text-align: left;
+/*text-transform: uppercase; Retiré par DOHAR33 le 2008-08-08 */
+}
+
+.requiredmsgtext {
+color: black;
+font-family: Verdana, Arial Narrow, helvetica, sans-serif;
+font-weight: normal;
+font-size: 90%;
+font-style: normal;
+text-align: left;
+}
+
+.fieldlabeltext {
+color: black;
+font-family: Verdana, Arial Narrow, helvetica, sans-serif;
+font-weight: bold;
+font-size: 100%; /* Valeur initiale : 90%; Modifié par DOHAR3 le 2008-08-08 */
+font-style: normal;
+text-align: left;
+}
+
+.fieldlabeltextinvisible {
+display: none;
+}
+
+.fieldrequiredtext {
+color: black;
+font-family: Verdana, Arial Narrow, helvetica, sans-serif;
+font-weight: normal;
+font-size: 90%;
+font-style: normal;
+text-align: left;
+}
+
+.fieldformattext {
+color: black;
+font-family: Verdana, Arial Narrow, helvetica, sans-serif;
+font-weight: normal;
+font-size: 90%;
+font-style: normal;
+text-align: left;
+}
+
+.fieldformatboldtext {
+color: black;
+font-family: Verdana, Arial Narrow, helvetica, sans-serif;
+font-weight: bold;
+font-size: 90%;
+font-style: normal;
+text-align: left;
+}
+
+.fielderrortext {
+color: black;
+font-family: Verdana, Arial Narrow, helvetica, sans-serif;
+font-weight: normal;
+font-size: 90%;
+font-style: normal;
+text-align: left;
+}
+
+.fieldsmallboldtext {
+color: black;
+font-family: Verdana, Arial Narrow, helvetica, sans-serif;
+font-weight: bold;
+font-size: 90%;
+font-style: normal;
+text-align: left;
+}
+
+.fieldsmalltext {
+color: black;
+font-family: Verdana, Arial Narrow, helvetica, sans-serif;
+font-weight: normal;
+font-size: 90%;
+font-style: normal;
+text-align: left;
+}
+
+.fieldmediumtext {
+color: black;
+font-family: Verdana, Arial Narrow, helvetica, sans-serif;
+font-weight: normal;
+font-size: 90%;
+font-style: normal;
+text-align: left;
+}
+
+.fieldlargetext {
+color: black;
+font-family: Verdana, Arial Narrow, helvetica, sans-serif;
+font-weight: bold;
+font-size: 110%;
+font-style: normal;
+text-align: left;
+}
+
+.fieldmediumtextbold {
+color: black;
+font-family: Verdana, Arial Narrow, helvetica, sans-serif;
+font-weight: bold;
+font-size: 90%;
+font-style: normal;
+text-align: left;
+}
+
+.fieldOrangetextbold {
+color: #FFA500;
+font-family: Verdana, Arial Narrow, helvetica, sans-serif;
+font-weight: bold;
+font-size: 90%;
+font-style: normal;
+text-align: left;
+}
+
+/* ANCHORS (LINKS) */
+/* ======================================================== */
+A:link {
+color: #3b5ab6; /* Valeur initiale : #0000ff; Modifié par DOHAR33 le 2008-08-08 */
+text-decoration: none;
+}
+
+A:visited {
+color: #3b5ab6; /* Valeur initiale : #660099; Modifié par DOHAR33 le 2008-08-08 */
+text-decoration: none;
+}
+
+A:active {
+color: #7394f3; /* Valeur initiale : #990000; Modifié par DOHAR33 le 2008-08-08 */
+}
+
+A:hover {
+color: #7394f3; /* Valeur initiale : #990000; Modifié par DOHAR33 le 2008-08-08 */
+text-decoration: underline;
+}
+
+/* ANCHOR Definitions for Home Page MenuItems class. */
+/* ======================================================== */
+A.menulinktext {
+font-family: Verdana, Arial Narrow, helvetica, sans-serif;
+font-weight: bold;
+font-size: 90%;
+font-style: normal;
+color: #3b5ab6; /* Valeur initiale : #0000ff; Modifié par DOHAR33 le 2008-08-08 */
+text-decoration: none;
+}
+
+A.submenulinktext {
+font-family: Verdana, Arial Narrow, helvetica, sans-serif;
+font-weight: bold;
+font-size: 90%;
+font-style: normal;
+text-transform: none;
+color: #3b5ab6; /* Valeur initiale : #0000ff; Modifié par DOHAR33 le 2008-08-08 */
+text-decoration: none;
+}
+
+A.submenulinktext:hover {
+background-color: #1E2B83;
+font-family: Verdana, Arial Narrow, helvetica, sans-serif;
+font-weight: bold;
+font-size: 90%;
+font-style: normal;
+text-align: justify;
+text-transform: none;
+color: #FFFFFF;
+text-decoration: none;
+}
+
+A.submenulinktext:visited {
+font-family: Verdana, Arial Narrow, helvetica, sans-serif;
+font-weight: bold;
+font-size: 90%;
+font-style: normal;
+text-transform: none;
+color: #3b5ab6; /* Valeur initiale : #660099; Modifié par DOHAR33 le 2008-08-08 */
+text-decoration: none;
+}
+
+A.submenulinktext:visited:hover {
+background-color: #1E2B83;
+font-family: Verdana, Arial Narrow, helvetica, sans-serif;
+font-weight: bold;
+font-size: 90%;
+font-style: normal;
+text-align: justify;
+text-transform: none;
+color: #FFFFFF;
+text-decoration: none;
+}
+
+A.submenulinktext2 {
+font-weight: normal;
+font-size: 90%;
+color: #3b5ab6; /* Valeur initiale : #0000ff; Modifié par DOHAR33 le 2008-08-08 */
+text-decoration: none;
+word-spacing: 0px; /* Ajouté par DOHAR33 le 2008-08-08 */
+}
+
+A.submenulinktext2:hover {
+font-weight: normal;
+font-size: 90%;
+color: #7394f3; /* Valeur initiale : #990000; Modifié par DOHAR33 le 2008-08-08 */
+text-decoration: underline;
+word-spacing: 0px; /* Ajouté par DOHAR33 le 2008-08-08 */
+}
+
+A.submenulinktext2:visited {
+font-family: Verdana, Arial Narrow, helvetica, sans-serif;
+font-weight: normal;
+font-size: 90%;
+font-style: normal;
+color: #3b5ab6; /* Valeur initiale : #660099; Modifié par DOHAR33 le 2008-08-08 */
+text-decoration: none;
+word-spacing: 0px; /* Ajouté par DOHAR33 le 2008-08-08 */
+}
+
+A.submenulinktext2:visited:hover {
+font-family: Verdana, Arial Narrow, helvetica, sans-serif;
+font-weight: normal;
+font-size: 90%;
+text-decoration: underline;
+color: #7394f3; /* Valeur initiale : #990000; Modifié par DOHAR33 le 2008-08-08 */
+word-spacing: 0px; /* Ajouté par DOHAR33 le 2008-08-08 */
+}
+
+A.whitespacelink { 
+line-height: 200%;
+COLOR: #1E2B83;
+text-decoration: underline;
+}
+
+A.largelinktext {
+font-family: Verdana, Arial, helvetica, sans-serif;
+font-weight: bold;
+font-size: 110%;
+font-style: normal;
+text-align: left;
+text-decoration: underline;
+}
+
+A.sitemaplevel1 {
+font-family: Verdana, Arial, helvetica, sans-serif;
+font-weight: bold;
+font-size: 80%;
+font-style: normal;
+text-align: left;
+text-decoration: none;
+color: #1E2B83;
+}
+
+A.sitemaplevel1:visited {
+font-family: Verdana, Arial, helvetica, sans-serif;
+font-weight: normal;
+font-size : 80%;
+font-style : normal;
+text-align : left;
+text-decoration: none;
+color: #3b5ab6; /* Valeur initiale : #660099; Modifié par DOHAR33 le 2008-08-08 */
+}
+
+A.sitemaplevel1:hover {
+font-family: Verdana, Arial, helvetica, sans-serif;
+font-weight: normal;
+font-size : 80%;
+font-style : normal;
+text-align : left;
+text-decoration: underline;
+color: #7394f3; /* Valeur initiale : #990000; Modifié par DOHAR33 le 2008-08-08 */
+}
+
+A.sitemaplevel2 {
+font-family: Verdana, Arial, helvetica, sans-serif;
+font-weight: normal;
+font-size: 70%;
+font-style: normal;
+text-align: left;
+text-decoration: none;
+color: #3b5ab6; /* Valeur initiale : #0000ff; Modifié par DOHAR33 le 2008-08-08 */
+}
+
+A.sitemaplevel2:visited {
+font-family: Verdana, Arial, helvetica, sans-serif;
+font-weight: normal;
+font-size : 70%;
+font-style : normal;
+text-align : left;
+text-decoration: none;
+color: #3b5ab6; /* Valeur initiale : #660099; Modifié par DOHAR33 le 2008-08-08 */
+}
+
+A.sitemaplevel2:hover {
+font-family: Verdana, Arial, helvetica, sans-serif;
+font-weight: bold;
+font-size : 70%;
+font-style : normal;
+text-align : left;
+text-decoration: underline;
+color: #7394f3; /* Valeur initiale : #990000; Modifié par DOHAR33 le 2008-08-08 */
+}
+
+A.sitemaplevel3 {
+font-family: Verdana, Arial, helvetica, sans-serif;
+font-weight: normal;
+font-size: 60%;
+font-style: normal;
+text-align: left;
+text-decoration: none;
+color: #3b5ab6; /* Valeur initiale : #0000ff; Modifié par DOHAR33 le 2008-08-08 */
+}
+
+A.sitemaplevel3:visited {
+font-family: Verdana, Arial, helvetica, sans-serif;
+font-weight: normal;
+font-size : 60%;
+font-style : normal;
+text-align : left;
+text-decoration: none;
+color: #3b5ab6; /* Valeur initiale : #660099; Modifié par DOHAR33 le 2008-08-08 */
+}
+
+A.sitemaplevel3:hover {
+font-family: Verdana, Arial, helvetica, sans-serif;
+font-weight: bold;
+font-size : 70%;
+font-style : normal;
+text-align : left;
+color: #7394f3; /* Valeur initiale : #990000; Modifié par DOHAR33 le 2008-08-08 */
+text-decoration: underline;
+}
+
+
+/* ANCHOR Definitions for Home Page MenuItems class. */
+/* ======================================================== */
+
+A.whitespacelink { 
+line-height: 200%;
+color: black;
+text-decoration: underline;
+}
+
+A.largelinktext {
+font-family: Verdana, Arial, helvetica, sans-serif;
+font-weight: bold;
+font-size: 120%;
+font-style: normal;
+text-align: left;
+text-decoration: underline;
+}
+
+A.sitemaplevel1 {
+font-family: Verdana, Arial, helvetica, sans-serif;
+font-weight: normal;
+font-size: 80%;
+font-style: normal;
+text-align: left;
+text-decoration: none;
+color: #3b5ab6; /* Valeur initiale : #0000ff; Modifié par DOHAR33 le 2008-08-08 */
+}
+
+A.sitemaplevel1:visited {
+font-family: Verdana, Arial, helvetica, sans-serif;
+font-weight: normal;
+font-size : 80%;
+font-style : normal;
+text-align : left;
+text-decoration: none;
+color: #3b5ab6; /* Valeur initiale : #660099; Modifié par DOHAR33 le 2008-08-08 */
+}
+
+A.sitemaplevel1:hover {
+font-family: Verdana, Arial, helvetica, sans-serif;
+font-weight: normal;
+font-size : 80%;
+font-style : normal;
+text-align : left;
+text-decoration: underline;
+color: #7394f3; /* Valeur initiale : #990000; Modifié par DOHAR33 le 2008-08-08 */
+}
+
+A.sitemaplevel2 {
+font-family: Verdana, Arial, helvetica, sans-serif;
+font-weight: normal;
+font-size: 80%;
+font-style: normal;
+text-align: left;
+text-decoration: none;
+color: #3b5ab6; /* Valeur initiale : #0000ff; Modifié par DOHAR33 le 2008-08-08 */
+}
+
+A.sitemaplevel2:visited {
+font-family: Verdana, Arial, helvetica, sans-serif;
+font-weight: normal;
+font-size : 80%;
+font-style : normal;
+text-align : left;
+text-decoration: none;
+color: #3b5ab6; /* Valeur initiale : #660099; Modifié par DOHAR33 le 2008-08-08 */
+}
+
+A.sitemaplevel2:hover {
+font-family: Verdana, Arial, helvetica, sans-serif;
+font-weight: normal;
+font-size : 80%;
+font-style : normal;
+text-align : left;
+text-decoration: underline;
+color: #7394f3; /* Valeur initiale : #990000; Modifié par DOHAR33 le 2008-08-08 */
+}
+
+A.sitemaplevel3 {
+font-family: Verdana, Arial, helvetica, sans-serif;
+font-weight: normal;
+font-size: 60%;
+font-style: normal;
+text-align: left;
+text-decoration: none;
+color: #3b5ab6; /* Valeur initiale : #0000ff; Modifié par DOHAR33 le 2008-08-08 */
+}
+
+A.sitemaplevel3:visited {
+font-family: Verdana, Arial, helvetica, sans-serif;
+font-weight: normal;
+font-size : 60%;
+font-style : normal;
+text-align : left;
+text-decoration: none;
+color: #3b5ab6; /* Valeur initiale : #660099; Modifié par DOHAR33 le 2008-08-08 */
+}
+
+A.sitemaplevel3:hover {
+font-family: Verdana, Arial, helvetica, sans-serif;
+font-weight: normal;
+font-size : 60%;
+font-style : normal;
+text-align : left;
+text-decoration: none;
+text-decoration: underline;
+color: #7394f3; /* Valeur initiale : #990000; Modifié par DOHAR33 le 2008-08-08 */
+}
+
+.whitespace1{
+padding-top: 0em;
+}
+
+.whitespace2{
+padding-top: 1em;
+}
+
+.whitespace3{
+padding-top: 2em;
+}
+
+.whitespace4{
+padding-top: 3em;
+}
+
+/* BODY */
+/* ======================================================== */
+BODY {
+background-color: #FFFFFF;
+color: black;
+font-family: Verdana, Arial Narrow, helvetica, sans-serif;
+font-style: normal;
+text-align: left;
+/* BROWSER CONSIDERATION - Override browser settings for BODY margin */
+margin-top: 0px;
+margin-left: 20px; /* Valeur initiale : 1%; Modifié par DOHAR33 le 2008-08-08 */
+margin-right: 20px; /* Valeur initiale : 2%; Modifié par DOHAR33 le 2008-08-08 */
+background-image: url(/wtlgifs/Y_web_bg_app.jpg); /* Valeur initiale : url(/wtlgifs/web_bg_app.jpg) Modifié par DOHAR33 le 2008-08-04 */
+background-repeat: no-repeat;
+}
+
+BODY.campuspipeline {
+background-color: #FFFFFF;
+color: black;
+font-family: Verdana, Arial Narrow, helvetica, sans-serif;
+font-style: normal;
+text-align: left;
+/* BROWSER CONSIDERATION - Override browser settings for BODY margin */
+margin-top: 6px;
+margin-left: 2%;
+background-image: none;
+background-repeat: no-repeat;
+}
+
+BODY.previewbody {
+background-color: #FFFFFF;
+color: black;
+font-family: Verdana, Arial Narrow, helvetica, sans-serif;
+font-weight: normal;
+font-size: 90%;
+font-style: normal;
+text-align: left;
+margin-left: 2%;
+margin-right: 2%;
+
+/* Override the background image in the main BODY */
+background-image: none;
+}
+
+BODY.validationbody {
+background-color: #FFFFFF;
+color: black;
+font-family: Verdana, Arial Narrow, helvetica, sans-serif;
+font-weight: normal;
+font-size: 90%;
+font-style: normal;
+text-align: left;
+margin-left: 0%;
+margin-right: 2%;
+/* Override the background image in the main BODY */
+background-image: none;
+}
+
+/* DIVIDES */
+/* All divides should have rules defined for margin and */
+/* text-align. */
+/* ======================================================== */
+DIV.menulistdiv {
+text-align: left;
+}
+
+DIV.headerwrapperdiv {
+margin-left: 0px;
+margin-top: 0px;
+}
+
+DIV.pageheaderdiv1 {
+text-align: left;
+margin-top: 80px; /* Valeur initiale : 8% Modifié par DOHAR33 le 2008-08-08 */
+margin-left: 0px;
+border-bottom: 0px solid;
+border-left: 0px solid;
+border-right: 0px solid;
+border-top: 0px solid;
+}
+
+DIV.pageheaderdiv2 {
+text-align: right;
+margin-top: 10px;
+margin-right: 10px;
+position: absolute;
+top: 0px;
+right: 0px;
+float: right;
+display: none;
+}
+
+DIV.headerlinksdiv {
+text-align: left;
+margin-right: 0%;
+}
+
+/* Class for BANNER SEARCH Form text and button controls */
+/* ======================================================== */
+DIV.headerlinksdiv2 {
+color: black;
+font-family: Verdana, Arial Narrow, helvetica, sans-serif;
+font-weight: bold;
+font-size: 90%;
+font-style: normal;
+text-align: left;
+text-transform: none;
+display: none; /* Ajouté par DOHAR33 le 2009-04-01 */
+}
+
+DIV.bodylinksdiv {
+text-align: center;
+margin-top: 1%;
+}
+
+DIV.footerlinksdiv {
+text-align: center;
+font-size: 90%;  /* Ajouté par DOHAR33 le 2010-03-22 */
+}
+
+DIV.backlinkdiv {
+text-align: right;
+margin-top: -40px;
+}
+
+DIV.pagetitlediv {
+text-align: left;
+}
+
+DIV.infotextdiv {
+text-align: left;
+}
+
+DIV.pagebodydiv {
+text-align: left;
+}
+
+DIV.pagefooterdiv {
+text-align: left;
+border: 0px;
+margin-top: 0px;
+float: left;
+background-image: url(/wtlgifs/Y_web_copyright.gif); /* Ajouté par DOHAR33 le 2008-08-04 */
+background-repeat: no-repeat; /* Ajouté par DOHAR33 le 2008-08-04 */
+background-position: left bottom; /* Ajouté par DOHAR33 le 2008-12-03 */
+padding-left: 138px; /* Ajouté par DOHAR33 le 2008-08-04 */
+}
+
+DIV.poweredbydiv {
+text-align: right;
+margin-right: -1px;
+margin-top: 0px;
+border-bottom: 0px solid;
+border-left: 0px solid;
+border-right: 0px solid;
+border-top: 0px solid;
+float: right;
+}
+
+DIV.previewdiv {
+text-align: center;
+}
+
+DIV.validationdiv {
+text-align: center;
+}
+
+DIV.staticheaders {
+text-align: right;
+font-size: 90%;
+}
+
+/* HEADERS */
+/* Do not set font-size for headers - defer to browser. */
+/* ======================================================== */
+/* H1 is reserved for Page Header */
+H1 {
+color: #FFFFFF;
+font-family: Verdana, Arial Narrow, helvetica, sans-serif;
+font-weight: bold;
+font-style: normal;
+font-size: 0%;
+margin-top: 0px;
+}
+
+/* H2 is reserved for Page Title */
+H2 {
+color: #00299d; /* Valeur initiale : BLACK; Modifié par DOHAR33 le 2008-08-08 */
+font-family: Verdana, Arial Narrow, helvetica, sans-serif;
+font-weight: bold; /* Valeur initiale : normal; Modifié par DOHAR33 le 2008-08-08 */
+font-style: normal;
+}
+
+/* H3 is reserved for Sub Title */
+H3 {
+color	 : BLACK;
+font-family: Verdana, Arial Narrow, helvetica, sans-serif;
+font-weight: normal;
+font-style : normal;
+}
+
+/* Horizontal Rule for Menu Section */
+/* ======================================================== */
+
+HR {
+color: #CCCC33;
+text-align: left;
+vertical-align: top;
+margin-top: -10px;
+}
+
+HR.pageseprator {
+color: #003366;
+text-align: left;
+vertical-align: top;
+}
+
+/* FORM CONTROLS */
+/* ======================================================== */
+INPUT {
+/*background-color: #FFFFFF;*/
+color: black;
+font-family: Verdana, Arial Narrow, helvetica, sans-serif;
+font-weight: normal;
+font-size: 90%;
+font-style: normal;
+}
+
+TEXTAREA {
+/*background-color: #FFFFFF;*/
+color: black;
+font-family: Verdana, Arial Narrow, helvetica, sans-serif;
+font-weight: normal;
+font-size: 90%;
+font-style: normal;
+}
+
+SELECT {
+/*background-color: #FFFFFF;*/
+color: black;
+font-family: Verdana, Arial Narrow, helvetica, sans-serif;
+font-weight: normal;
+font-size: 90%;
+font-style: normal;
+}
+
+/* TABLES */
+/* ======================================================== */
+TABLE.dataentrytable {
+border-bottom: 0px solid;
+border-left: 0px solid;
+border-right: 0px solid;
+border-top: 0px solid;
+}
+
+TABLE.datadisplaytable {
+border-bottom: 0px solid;
+border-left: 0px solid;
+border-right: 0px solid;
+border-top: 0px solid;
+}
+
+TABLE.plaintable {
+border-bottom: 0px solid;
+border-left: 0px solid;
+border-right: 0px solid;
+border-top: 0px solid;
+}
+
+TABLE.menuplaintable {
+/* Create a horizontal rule effect. */
+border-top: 1pt #707070 solid;
+}
+
+TABLE.pageheadertable {
+margin-top: 0px;
+}
+
+TABLE.colorsampletable {
+background-color: #FFFFFF;
+}
+
+TABLE.bordertable {
+border-collapse: collapse;
+border-bottom: 1px solid;
+border-left: 1px solid;
+border-right: 1px solid;
+border-top: 1px solid;
+}
+
+/* TABLE HEADERS AND DATA CELLS */
+/* ======================================================== */
+TABLE TH {
+vertical-align: top;
+color: black;
+}
+
+TABLE TD {
+vertical-align: top;
+color: black;
+}
+
+.pageheadertablecell {
+text-align: left;
+}
+
+.pageheadernavlinkstablecell {
+text-align: right;
+}
+
+/* DATA ENTRY TABLE HEADERS AND DATA CELLS */
+/* Some font rules are redunant because they do not */
+/* inherit well from the BODY on older browsers. */
+/* ======================================================== */
+TABLE TD.deheader {
+background-color: #d3deff; /* Valeur initiale : #E3E5EE; Modifié par DOHAR33 le 2008-08-08 */
+color: black;
+font-family: Verdana, Arial Narrow, helvetica, sans-serif;
+font-weight: bold;
+font-size: 90%;
+font-style: normal;
+text-align: left;
+vertical-align: middle; /* Valeur initiale : top; Modifié par DOHAR33 le 2008-08-19 */
+padding: 2px; /* Ajouté par DOHAR33 le 2008-08-08 */
+}
+
+TABLE TH.deheader {
+background-color: #d3deff; /* Valeur initiale : #E3E5EE; Modifié par DOHAR33 le 2008-08-08 */
+color: black;
+font-family: Verdana, Arial Narrow, helvetica, sans-serif;
+font-weight: bold;
+font-size: 90%;
+font-style: normal;
+text-align: left;
+vertical-align: middle; /* Valeur initiale : top; Modifié par DOHAR33 le 2008-08-19 */
+padding: 2px; /* Ajouté par DOHAR33 le 2008-08-08 */
+}
+
+TABLE TD.detitle {
+background-color: #d3deff; /* Valeur initiale : #E3E5EE; Modifié par DOHAR33 le 2008-08-08 */
+color: black;
+font-family: Verdana, Arial Narrow, helvetica, sans-serif;
+font-weight: bold;
+font-size: 90%;
+font-style: normal;
+text-align: left;
+vertical-align: middle; /* Valeur initiale : top; Modifié par DOHAR33 le 2008-08-19 */
+/* Make titles big and chunky. */
+/* padding-bottom: 1em; retiré par DOHAR33 le 2008-08-08 */
+padding: 2px; /* Ajouté par DOHAR33 le 2008-08-08 */
+}
+
+TABLE TH.detitle {
+background-color: #d3deff; /* Valeur initiale : #E3E5EE; Modifié par DOHAR33 le 2008-08-08 */
+color: black;
+font-family: Verdana, Arial Narrow, helvetica, sans-serif;
+font-weight: bold;
+font-size: 90%;
+font-style: normal;
+text-align: left;
+vertical-align: middle; /* Valeur initiale : top; Modifié par DOHAR33 le 2008-08-19 */
+/* Make titles big and chunky. */
+/* padding-bottom: 1em; retiré par DOHAR33 le 2008-08-08 */
+padding: 2px; /* Ajouté par DOHAR33 le 2008-08-08 */
+}
+
+TABLE TD.delabel {
+background-color: #d3deff; /* Mise en commentaire retirée et Valeur initiale : #E3E5EE; Modifié par DOHAR33 le 2008-08-08 */
+color: black;
+font-family: Verdana, Arial Narrow, helvetica, sans-serif;
+font-weight: bold;
+font-size: 90%;
+font-style: normal;
+text-align: left;
+vertical-align: middle; /* Valeur initiale : top; Modifié par DOHAR33 le 2008-08-19 */
+padding: 2px; /* Ajouté par DOHAR33 le 2008-08-08 */
+}
+
+TABLE TH.delabel {
+background-color: #d3deff; /* Mise en commentaire retirée et Valeur initiale : #E3E5EE; Modifié par DOHAR33 le 2008-08-08 */
+color: black;
+font-family: Verdana, Arial Narrow, helvetica, sans-serif;
+font-weight: bold;
+font-size: 90%;
+font-style: normal;
+text-align: left;
+vertical-align: middle; /* Valeur initiale : top; Modifié par DOHAR33 le 2008-08-19 */
+padding: 2px; /* Ajouté par DOHAR33 le 2008-08-08 */
+}
+
+TABLE TD.deseparator {
+color: black;
+font-family: Verdana, Arial Narrow, helvetica, sans-serif;
+font-weight: normal;
+font-size: 90%;
+font-style: normal;
+text-align: left;
+vertical-align: middle; /* Valeur initiale : top; Modifié par DOHAR33 le 2008-08-19 */
+}
+
+TABLE TD.dehighlight {
+color: black;
+font-family: Verdana, Arial Narrow, helvetica, sans-serif;
+font-weight: normal;
+font-size: 90%;
+font-style: normal;
+text-align: left;
+vertical-align: middle; /* Valeur initiale : top; Modifié par DOHAR33 le 2008-08-19 */
+}
+
+TABLE TD.dedead {
+color: black;
+font-family: Verdana, Arial Narrow, helvetica, sans-serif;
+font-weight: normal;
+font-size: 90%;
+font-style: normal;
+text-align: left;
+vertical-align: middle; /* Valeur initiale : top; Modifié par DOHAR33 le 2008-08-19 */
+}
+
+TABLE TD.dedefault {
+color: black;
+font-family: Verdana, Arial Narrow, helvetica, sans-serif;
+font-weight: normal;
+font-size: 90%;
+font-style: normal;
+text-align: left;
+vertical-align: middle; /* Valeur initiale : top; Modifié par DOHAR33 le 2008-08-19 */
+}
+
+TABLE TD.dewhite {
+color: black;
+font-family: Verdana, Arial Narrow, helvetica, sans-serif;
+font-weight: normal;
+font-size: 90%;
+font-style: normal;
+text-align: left;
+vertical-align: middle; /* Valeur initiale : top; Modifié par DOHAR33 le 2008-08-19 */
+}
+
+TABLE TD.deborder {
+color: black;
+font-family: Verdana, Arial Narrow, helvetica, sans-serif;
+font-weight: normal;
+font-size: 90%;
+font-style: normal;
+text-align: left;
+border: 1px solid;
+}
+
+/* DATA DISPLAY TABLE HEADERS AND DATA CELLS */
+/* Some font rules are redunant because they do not */
+/* inherit well from the BODY on older browsers. */
+/* ======================================================== */
+TABLE TD.ddheader {
+background-color: #d3deff; /* Valeur initiale : #E3E5EE; Modifié par DOHAR33 le 2008-08-08 */
+color: black;
+font-family: Verdana, Arial Narrow, helvetica, sans-serif;
+font-weight: bold;
+font-size: 90%;
+font-style: normal;
+text-align: left;
+vertical-align: middle; /* Valeur initiale : top; Modifié par DOHAR33 le 2008-08-19 */
+padding: 2px; /* Ajouté par DOHAR33 le 2008-08-08 */
+}
+
+TABLE TH.ddheader {
+background-color: #d3deff; /* Valeur initiale : #E3E5EE; Modifié par DOHAR33 le 2008-08-08 */
+color: black;
+font-family: Verdana, Arial Narrow, helvetica, sans-serif;
+font-weight: bold;
+font-size: 90%;
+font-style: normal;
+text-align: left;
+vertical-align: middle; /* Valeur initiale : top; Modifié par DOHAR33 le 2008-08-19 */
+padding: 2px; /* Ajouté par DOHAR33 le 2008-08-08 */
+}
+
+TABLE TD.ddtitle {
+background-color: #d3deff; /* Valeur initiale : #E3E5EE; Modifié par DOHAR33 le 2008-08-08 */
+color: black;
+font-family: Verdana, Arial Narrow, helvetica, sans-serif;
+font-weight: bold;
+font-size: 90%;
+font-style: normal;
+text-align: left;
+vertical-align: middle; /* Valeur initiale : top; Modifié par DOHAR33 le 2008-08-19 */
+/* Make titles big and chunky. */
+/* padding-bottom: 1em; retiré par DOHAR33 le 2008-08-08 */
+padding: 2px; /* Ajouté par DOHAR33 le 2008-08-08 */
+}
+
+TABLE TH.ddtitle {
+background-color: #d3deff; /* Valeur initiale : #E3E5EE; Modifié par DOHAR33 le 2008-08-08 */
+color: black;
+font-family: Verdana, Arial Narrow, helvetica, sans-serif;
+font-weight: bold;
+font-size: 90%;
+font-style: normal;
+text-align: left;
+vertical-align: middle; /* Valeur initiale : top; Modifié par DOHAR33 le 2008-08-19 */
+/* Make titles big and chunky. */
+/* padding-bottom: 1em; retiré par DOHAR33 le 2008-08-08 */
+padding: 2px; /* Ajouté par DOHAR33 le 2008-08-08 */
+}
+
+TABLE TD.ddlabel {
+background-color: #d3deff; /* Mise en commentaire retirée et Valeur initiale : #E3E5EE; Modifié par DOHAR33 le 2008-08-08 */
+color: black;
+font-family: Verdana, Arial Narrow, helvetica, sans-serif;
+font-weight: bold;
+font-size: 90%;
+font-style: normal;
+text-align: left;
+vertical-align: middle; /* Valeur initiale : top; Modifié par DOHAR33 le 2008-08-19 */
+padding: 2px; /* Ajouté par DOHAR33 le 2008-08-08 */
+}
+
+TABLE TH.ddlabel {
+background-color: #d3deff; /* Mise en commentaire retirée et Valeur initiale : #E3E5EE; Modifié par DOHAR33 le 2008-08-08 */
+color: black;
+font-family: Verdana, Arial Narrow, helvetica, sans-serif;
+font-weight: bold;
+font-size: 90%;
+font-style: normal;
+text-align: left;
+vertical-align: middle; /* Valeur initiale : top; Modifié par DOHAR33 le 2008-08-19 */
+padding: 2px; /* Ajouté par DOHAR33 le 2008-08-08 */
+}
+
+TABLE TD.ddseparator {
+color: black;
+font-family: Verdana, Arial Narrow, helvetica, sans-serif;
+font-weight: normal;
+font-size: 90%;
+font-style: normal;
+text-align: left;
+vertical-align: middle; /* Valeur initiale : top; Modifié par DOHAR33 le 2008-08-19 */
+}
+
+TABLE TD.ddhighlight {
+color: black;
+font-family: Verdana, Arial Narrow, helvetica, sans-serif;
+font-weight: normal;
+font-size: 90%;
+font-style: normal;
+text-align: left;
+vertical-align: middle; /* Valeur initiale : top; Modifié par DOHAR33 le 2008-08-19 */
+}
+
+TABLE TD.dddead {
+color: black;
+font-family: Verdana, Arial Narrow, helvetica, sans-serif;
+font-weight: normal;
+font-size: 90%;
+font-style: normal;
+text-align: left;
+vertical-align: middle; /* Valeur initiale : top; Modifié par DOHAR33 le 2008-08-19 */
+}
+
+TABLE TD.dddefault {
+color: black;
+font-family: Verdana, Arial Narrow, helvetica, sans-serif;
+font-weight: normal;
+font-size: 90%;
+font-style: normal;
+text-align: left;
+vertical-align: middle; /* Valeur initiale : top; Modifié par DOHAR33 le 2008-08-19 */
+/*border-bottom: 1pt #BFBFBF solid; */
+}
+
+TABLE TD.ddnontabular {
+color: black;
+font-family: Verdana, Arial Narrow, helvetica, sans-serif;
+font-weight: normal;
+font-size: 90%;
+font-style: normal;
+text-align: left;
+vertical-align: middle; /* Valeur initiale : top; Modifié par DOHAR33 le 2008-08-19 */
+}
+
+TABLE TD.ddwhite {
+color: black;
+font-family: Verdana, Arial Narrow, helvetica, sans-serif;
+font-weight: normal;
+font-size: 90%;
+font-style: normal;
+text-align: left;
+vertical-align: middle; /* Valeur initiale : top; Modifié par DOHAR33 le 2008-08-19 */
+}
+
+/* PLAIN TABLE HEADERS AND DATA CELLS */
+/* These table data cell classes pertain to a table that is */
+/* used strictly for layout. They do not have the redundant */
+/* font rules because it is assumed that whatever is placed */
+/* in these TD/TH tags will have its own class. */
+/* ======================================================== */
+TABLE TD.pltitle {
+font-family: Verdana, Arial Narrow, helvetica, sans-serif;
+font-weight: normal;
+font-size: 90%;
+font-weight: bold;
+}
+
+TABLE TD.plheader {
+font-family: Verdana, Arial Narrow, helvetica, sans-serif;
+font-size: 90%;
+font-weight: bold;
+}
+
+TABLE TH.pllabel {
+font-family: Verdana, Arial Narrow, helvetica, sans-serif;
+font-size: 90%;
+font-weight: bold;
+}
+
+TABLE TD.plseparator {
+font-family: Verdana, Arial Narrow, helvetica, sans-serif;
+font-weight: normal;
+font-size: 90%;
+}
+
+TABLE TD.plhighlight {
+font-family: Verdana, Arial Narrow, helvetica, sans-serif;
+font-weight: normal;
+font-size: 90%;
+}
+
+TABLE TD.pldead {
+font-family: Verdana, Arial Narrow, helvetica, sans-serif;
+font-weight: normal;
+font-size: 90%;
+}
+
+TABLE TD.pldefault {
+font-family: Verdana, Arial Narrow, helvetica, sans-serif;
+font-weight: normal;
+font-size: 90%;
+}
+
+TABLE TD.plwhite {
+font-family: Verdana, Arial Narrow, helvetica, sans-serif;
+font-weight: normal;
+font-size: 90%;
+
+}
+TABLE TD.plheaderlinks {
+font-family: Verdana, Arial Narrow, helvetica, sans-serif;
+font-weight: normal;
+font-size: 90%;
+}
+
+/*========================================================*/
+/*======= Class for header links=========================*/
+/*========================================================*/
+
+TABLE TD.plheadermenulinks {
+font-weight: normal;
+/*background-color: #CED5EA;*/
+}
+
+/* MENU PLAIN TABLE HEADERS AND DATA CELLS */
+/* ======================================================== */
+TABLE TD.mptitle {
+color: black;
+font-family: Verdana, Arial Narrow, helvetica, sans-serif;
+font-weight: bold;
+font-size: 90%;
+font-style: normal;
+text-align: left;
+vertical-align: top;
+}
+
+TABLE TD.mpheader {
+color: black;
+font-family: Verdana, Arial Narrow, helvetica, sans-serif;
+font-weight: bold;
+font-size: 90%;
+font-style: normal;
+text-align: left;
+vertical-align: top;
+}
+
+TABLE TH.mplabel {
+color: black;
+font-family: Verdana, Arial Narrow, helvetica, sans-serif;
+font-weight: bold;
+font-size: 90%;
+font-style: normal;
+text-align: left;
+vertical-align: top;
+}
+
+TABLE TD.mpwhite {
+color: black;
+font-family: Verdana, Arial Narrow, helvetica, sans-serif;
+font-weight: normal;
+font-size: 90%;
+font-style: normal;
+text-align: left;
+vertical-align: top;
+}
+
+TABLE TD.mpdefault {
+color: black;
+font-family: Verdana, Arial Narrow, helvetica, sans-serif;
+font-weight: normal;
+font-size: 90%;
+font-style: normal;
+text-align: left;
+vertical-align: top;
+}
+
+TABLE TD.indefault {
+color: black;
+font-family: Verdana, Arial Narrow, helvetica, sans-serif;
+font-weight: normal;
+font-size: 90%;
+font-style: normal;
+text-align: left;
+}
+
+/* Define tables with border				 */
+/* ======================================================== */
+TABLE TD.dbheader {
+background-color: #d3deff; /* Valeur initiale : #E3E5EE; Modifié par DOHAR33 le 2008-08-08 */
+color: black;
+font-family: Verdana, Arial Narrow, helvetica, sans-serif;
+font-weight: bold;
+font-size: 90%;
+font-style: normal;
+text-align: left;
+vertical-align: top;
+border: 1px solid;
+}
+
+TABLE TH.dbheader {
+background-color: #d3deff; /* Valeur initiale : #E3E5EE; Modifié par DOHAR33 le 2008-08-08 */
+color: black;
+font-family: Verdana, Arial Narrow, helvetica, sans-serif;
+font-weight: bold;
+font-size: 90%;
+font-style: normal;
+text-align: left;
+vertical-align: top;
+border: 1px solid;
+}
+
+TABLE TD.dbtitle {
+background-color: #d3deff; /* Valeur initiale : #E3E5EE; Modifié par DOHAR33 le 2008-08-08 */
+color: black;
+font-family: Verdana, Arial Narrow, helvetica, sans-serif;
+font-weight: bold;
+font-size: 90%;
+font-style: normal;
+text-align: left;
+vertical-align: top;
+/* Make titles big and chunky. */
+padding-bottom: 1em;
+border: 1px solid;
+}
+
+TABLE TH.dbtitle {
+background-color: #d3deff; /* Valeur initiale : #E3E5EE; Modifié par DOHAR33 le 2008-08-08 */
+color: black;
+font-family: Verdana, Arial Narrow, helvetica, sans-serif;
+font-weight: bold;
+font-size: 90%;
+font-style: normal;
+text-align: left;
+vertical-align: top;
+/* Make titles big and chunky. */
+padding-bottom: 1em;
+border: 1px solid;
+}
+
+TABLE TD.dblabel {
+background-color: #d3deff; /* Mise en commentaire retirée et Valeur initiale : #E3E5EE; Modifié par DOHAR33 le 2008-08-08 */
+color: black;
+font-family: Verdana, Arial Narrow, helvetica, sans-serif;
+font-weight: normal;
+font-size: 90%;
+font-style: normal;
+text-align: left;
+vertical-align: top;
+border: 1px solid;
+}
+
+TABLE TH.dblabel {
+background-color: #d3deff; /* Valeur initiale : #E3E5EE; Modifié par DOHAR33 le 2008-08-08 */
+color: black;
+font-family: Verdana, Arial Narrow, helvetica, sans-serif;
+font-weight: bold;
+font-size: 90%;
+font-style: normal;
+text-align: left;
+vertical-align: top;
+border: 1px solid;
+}
+
+TABLE TD.dbdefault {
+color: black;
+font-family: Verdana, Arial Narrow, helvetica, sans-serif;
+font-weight: normal;
+font-size: 90%;
+font-style: normal;
+text-align: left;
+vertical-align: top;
+border: 1px solid;
+}
+
+/* NON TABULAR TABLE DATA DISPLAY HEADERS AND DATA CELLS */
+/* Some font rules are redunant because they do not */
+/* inherit well from the BODY on older browsers. */
+/* ======================================================== */
+TABLE TD.ntheader {
+background-color: #d3deff; /* Valeur initiale : #E3E5EE; Modifié par DOHAR33 le 2008-08-08 */
+color: black;
+font-family: Verdana, Arial Narrow, helvetica, sans-serif;
+font-weight: bold;
+font-size: 90%;
+font-style: normal;
+text-align: left;
+vertical-align: middle; /* Valeur initiale : top; Modifié par DOHAR33 le 2008-08-19 */
+}
+
+TABLE TH.ntheader {
+background-color: #d3deff; /* Valeur initiale : #E3E5EE; Modifié par DOHAR33 le 2008-08-08 */
+color: black;
+font-family: Verdana, Arial Narrow, helvetica, sans-serif;
+font-weight: bold;
+font-size: 90%;
+font-style: normal;
+text-align: left;
+vertical-align: middle; /* Valeur initiale : top; Modifié par DOHAR33 le 2008-08-19 */
+}
+
+TABLE TD.nttitle {
+background-color: #d3deff; /* Valeur initiale : #E3E5EE; Modifié par DOHAR33 le 2008-08-08 */
+color: black;
+font-family: Verdana, Arial Narrow, helvetica, sans-serif;
+font-weight: bold;
+font-size: 90%;
+font-style: normal;
+text-align: left;
+vertical-align: middle; /* Valeur initiale : top; Modifié par DOHAR33 le 2008-08-19 */
+/* Make titles big and chunky. */
+/* padding-bottom: 1em; Retiré par DOHAR33 le 2008-08-21 */
+padding: 2px; /* Ajouté par DOHAR33 le 2008-08-21 */
+}
+
+TABLE TH.nttitle {
+background-color: #d3deff; /* Valeur initiale : #E3E5EE; Modifié par DOHAR33 le 2008-08-08 */
+color: black;
+font-family: Verdana, Arial Narrow, helvetica, sans-serif;
+font-weight: bold;
+font-size: 90%;
+font-style: normal;
+text-align: left;
+vertical-align: middle; /* Valeur initiale : top; Modifié par DOHAR33 le 2008-08-19 */
+/* Make titles big and chunky. */
+/* padding-bottom: 1em; Retiré par DOHAR33 le 2008-08-21 */
+padding: 2px; /* Ajouté par DOHAR33 le 2008-08-21 */
+}
+
+TABLE TD.ntlabel {
+background-color: #d3deff; /* Valeur initiale : #E3E5EE; Modifié par DOHAR33 le 2008-08-08 */
+color: black;
+font-family: Verdana, Arial Narrow, helvetica, sans-serif;
+font-weight: bold;
+font-size: 90%;
+font-style: normal;
+text-align: left;
+vertical-align: middle; /* Valeur initiale : top; Modifié par DOHAR33 le 2008-08-19 */
+}
+
+TABLE TH.ntlabel {
+background-color: #d3deff; /* Valeur initiale : #E3E5EE; Modifié par DOHAR33 le 2008-08-08 */
+color: black;
+font-family: Verdana, Arial Narrow, helvetica, sans-serif;
+font-weight: bold;
+font-size: 90%;
+font-style: normal;
+text-align: left;
+vertical-align: middle; /* Valeur initiale : top; Modifié par DOHAR33 le 2008-08-19 */
+}
+
+TABLE TD.ntseparator {
+color: black;
+font-family: Verdana, Arial Narrow, helvetica, sans-serif;
+font-weight: normal;
+font-size: 90%;
+font-style: normal;
+text-align: left;
+vertical-align: middle; /* Valeur initiale : top; Modifié par DOHAR33 le 2008-08-19 */
+}
+
+TABLE TD.nthighlight {
+color: black;
+font-family: Verdana, Arial Narrow, helvetica, sans-serif;
+font-weight: normal;
+font-size: 90%;
+font-style: normal;
+text-align: left;
+vertical-align: middle; /* Valeur initiale : top; Modifié par DOHAR33 le 2008-08-19 */
+}
+
+TABLE TD.ntdead {
+color: black;
+font-family: Verdana, Arial Narrow, helvetica, sans-serif;
+font-weight: normal;
+font-size: 90%;
+font-style: normal;
+text-align: left;
+vertical-align: middle; /* Valeur initiale : top; Modifié par DOHAR33 le 2008-08-19 */
+}
+
+TABLE TD.ntdefault {
+color: black;
+font-family: Verdana, Arial Narrow, helvetica, sans-serif;
+font-weight: normal;
+font-size: 90%;
+font-style: normal;
+text-align: left;
+vertical-align: middle; /* Valeur initiale : top; Modifié par DOHAR33 le 2008-08-19 */
+}
+
+TABLE TD.ntwhite {
+color: black;
+font-family: Verdana, Arial Narrow, helvetica, sans-serif;
+font-weight: normal;
+font-size: 90%;
+font-style: normal;
+text-align: left;
+vertical-align: middle; /* Valeur initiale : top; Modifié par DOHAR33 le 2008-08-19 */
+}
+/*
+
+New Tab styles for Self Service
+
+*/
+.bgtabon {
+	BACKGROUND-COLOR: #7394f3; /* Valeur initiale : #003366; Modifié par DOHAR33 le 2008-08-08 */
+}
+.bgtaboff {
+	BACKGROUND-COLOR: #3b5ab6; /* Valeur initiale : #cccccc; Modifié par DOHAR33 le 2008-08-08 */
+}
+.texttabon {
+	COLOR: #ffffff;
+}
+.texttaboff {
+	COLOR: #ffffff; /* Valeur initiale : #000000; Modifié par DOHAR33 le 2008-08-08 */
+}
+.tabon {
+	PADDING-LEFT: 8px;
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 12px;
+	BACKGROUND-IMAGE: url(/wtlgifs/web_tab_corner.gif);
+	COLOR: #ffffff;
+	BACKGROUND-REPEAT: no-repeat;
+	BACKGROUND-COLOR: #7394f3; /* Valeur initiale : #003366; Modifié par DOHAR33 le 2008-08-08 */
+}
+.tabon A:link {
+	COLOR: #ffffff;
+	TEXT-DECORATION: none;
+}
+.tabon A:visited {
+	COLOR: #ffffff;
+	TEXT-DECORATION: none;
+}
+.tabon A:active {
+	COLOR: #ffffff;
+	TEXT-DECORATION: none;
+}
+.tabon A:hover {
+	COLOR: #f4ca36; /* Valeur initiale : #ffffff; Modifié par DOHAR33 le 2008-08-08 */
+	TEXT-DECORATION: none;
+}
+.taboff {
+	PADDING-LEFT: 8px; 
+	FONT-WEIGHT: bold; 
+	FONT-SIZE: 12px; 
+	BACKGROUND-IMAGE: url(/wtlgifs/web_tab_corner.gif); 
+	COLOR: #000000; 
+	BACKGROUND-REPEAT: no-repeat; 
+	BACKGROUND-COLOR: #3b5ab6; /* Valeur initiale : #cccccc; Modifié par DOHAR33 le 2008-08-04 */
+}
+.taboff A:link {
+	COLOR: #ffffff; /* Valeur initiale : #000000; Modifié par DOHAR33 le 2008-08-08 */
+	TEXT-DECORATION: none;
+}
+.taboff A:visited {
+	COLOR: #ffffff; /* Valeur initiale : #000000; Modifié par DOHAR33 le 2008-08-08 */
+	TEXT-DECORATION: none;
+}
+.taboff A:active {
+	COLOR: #ffffff; /* Valeur initiale : #000000; Modifié par DOHAR33 le 2008-08-08 */
+	TEXT-DECORATION: none;
+}
+.taboff A:hover {
+	COLOR: #f4ca36; /* Valeur initiale : #000000; Modifié par DOHAR33 le 2008-08-08 */
+	TEXT-DECORATION: none;
+}
+.bg3 {
+	/* BACKGROUND-COLOR: #cccc00; Retiré par DOHAR33 2008-08-08 */
+	border-bottom: 1px #a49987 dotted; /* Ajouté par DOHAR33 le 2008-08-08 */
+}
